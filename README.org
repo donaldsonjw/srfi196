@@ -1,0 +1,29 @@
+* SRFI-196: Range Objects
+
+** Description
+  The srfi library is an implementation of [[https://srfi.schemers.org/srfi-196/srfi-196.html][SRFI 196]] for Bigloo
+  Scheme. It is an adaption of the sample implentation by Wolfgang
+  Corcoran-Mathe to Bigloo Scheme. 
+
+** Building
+  Both the bigloo native and jvm backends are supported. To build,
+  execute:
+    #+begin_src shell
+  ./configure --prefix=<installation path prefix>; make
+#+end_src
+  where =<installation path prefix>= is the desired installation path
+  prefix (e.g, =/usr/local=). You usually want the path prefix to match
+  that used by Bigloo itself.
+  
+** Installation
+  To install the library, execute:
+#+begin_src shell
+  make install
+#+end_src 
+
+** Tests
+To run the tests execute:
+
+  #+begin_src shell
+  make test
+#+end_src
